@@ -1,4 +1,3 @@
-<!-- Media Query Demo (check the CSS page) -->
 <!doctype html>
 <html lang="en-us">
 
@@ -14,7 +13,7 @@
 
 </head>
 
-<body>
+<body class="bg-pattern">
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand bg-info text-light rounded px-3" href="#">Joshua Chu</a>
@@ -37,27 +36,27 @@
     
   </nav>
   
-  <div class="container mt-5 bg-secondary" style="width: 14-rem;">
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <div class="dropdown-divider"></div>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <img src="images/spt.png" class="card-img-top" alt="...">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
+  <div class="container mt-5 bg-transparent">
+    <div class="card" style="width: 24rem;">
+      <div class="card-body">
+        <h5 class="card-title">Contact me</h5>
+        <div class="dropdown-divider"></div>
       </div>
-    
-
-    
-
+      <form class="p-3">
+        <div class="form-group">
+          <label for="contacter-name">Username</label>
+          <input type="username" class="form-control" id="contacter-name" placeholder="Jane Doe">
+        </div>
+        <div class="form-group">
+          <label for="contacter-email">Email address</label>
+          <input type="email" class="form-control" id="contacter-email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="contacter-message">Message</label>
+          <textarea class="form-control" id="contacter-message" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
   </div>
 </body>
