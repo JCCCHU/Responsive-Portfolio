@@ -8,7 +8,10 @@
   <title>HTML</title>
 
   <link rel="stylesheet" type="text/css" href="reset.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
@@ -41,22 +44,23 @@
       <div class="card-body">
         <h5 class="card-title">Contact me</h5>
         <div class="dropdown-divider"></div>
+          <form>
+            <div class="form-group">
+              <label for="contacter-name">Username</label>
+              <input type="username" class="form-control" id="contacter-name">
+            </div>
+            <div class="form-group">
+              <label for="contacter-email">Email address</label>
+              <input type="email" class="form-control" id="contacter-email">
+            </div>
+            <div class="form-group">
+              <label for="contacter-message">Message</label>
+              <textarea class="form-control" id="contacter-message" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
       </div>
-      <form class="p-3">
-        <div class="form-group">
-          <label for="contacter-name">Username</label>
-          <input type="username" class="form-control" id="contacter-name" placeholder="Jane Doe">
-        </div>
-        <div class="form-group">
-          <label for="contacter-email">Email address</label>
-          <input type="email" class="form-control" id="contacter-email" placeholder="Enter email">
-        </div>
-        <div class="form-group">
-          <label for="contacter-message">Message</label>
-          <textarea class="form-control" id="contacter-message" rows="5"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+      
     </div>
   </div>
 </body>
